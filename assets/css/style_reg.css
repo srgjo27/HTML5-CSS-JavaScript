@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.signup a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    width: 90%;
+    background-color: black;
+}
+
+main {
+    overflow: auto;
+}
+
+main > h2 {
+    text-align: center;
+    color: rgb(199, 72, 186);
+}
+
+.content{
+    padding: 0 5%;
+}
+
+.box-left {
+    float: left;
+    width: 50%;
+}
+
+.box-right {
+    float: right;
+    width: 50%;
+}
+
+table tr{
+    line-height: 1.5em;
+}
+
+.button {
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 663px) {
+
+    .box-left,
+    .box-right {
+        width: 100%;
+        padding: 0;
+    }
+}

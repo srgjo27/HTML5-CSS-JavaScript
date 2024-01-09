@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header > p {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.signup a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 50%;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    width: 90%;
+    background-color: black;
+}
+
+main {
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    padding-left: 5%;
+}
+
+#content>h3 {
+    color: rgb(199, 72, 186);
+}
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music {
+    padding-left: 15%;
+}
+
+.contact-list li a {
+    list-style-position: outside;
+    text-decoration: none;
+    color: rgb(199, 72, 186);
+    font-family: Verdana;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-right: 5%;
+}
+
+aside h3 {
+    color: rgb(199, 72, 186);
+}
+
+aside ol {
+    line-height: 1.5em;
+}
+
+aside ol li {
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart figure {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+
+    #content,
+    .header,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
